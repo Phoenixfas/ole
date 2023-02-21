@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useState } from 'react'
 import { FaSearch } from 'react-icons/fa'
 
@@ -33,11 +34,11 @@ export default function Navbar() {
             <Image src="/images/logo.png" alt="logo" width={100} height={100} />
         </div>
         <div className={'navbar_links'}>
-            <a href="/">Home</a>
-            <a href="/tours">Tours</a>
-            <a href="/contact">Contact</a>
-            <a href="/tips">Tips</a>
-            <a href="/gallery">Gallery</a>
+            <Link href="/">Home</Link>
+            <Link href="/tours">Tours</Link>
+            <Link href="/contact">Contact</Link>
+            <Link href="/tips">Tips</Link>
+            <Link href="/gallery">Gallery</Link>
         </div>
         <div className={'navbar_search'}>
             <div className={`${'searchInput'} ${searchActive && 'searchActive'}`}>
