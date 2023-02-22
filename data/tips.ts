@@ -67,3 +67,213 @@
 ]
 
 
+export const facilities = [
+    {
+        id: 1,
+        name: "VISA & IMMIGRATION",
+        descs: [
+            {
+                name: "",
+                description: "Apart from nationals of Kenya all visitors to Ethiopia are required to have an entry visa and if you arrive by air we recommend that you have an onward ticket. Obtaining a single entry tourist visa is not a problem but multiple entry visas are only issued to business travelers. Ethiopian immigration issues visa upon arrival for most European countries, USA, Canada & Australia. We recommend you check your local Ethiopian Embassy or Consulate for the latest visa requirements. Tourist visa fee for a one month, single-entry is USD 20."
+            },
+            {
+                name: "Airport Tax",
+                description: "There is no departure tax for international or domestic flights."
+            },
+            {
+                name: "Health and Immunizations",
+                description: "We recommend that you contact your physician or a specialist travel clinic for up-to-date information on immunization before travel. Anti-malaria medication may be required and the use of insect repellent is highly recommended."
+            },
+            {
+                name: "",
+                description: "Please note that it is highly recommended that your passport has at least six months validity remaining after your intended date of departure. The passports of all travelers entering Ethiopia must contain at least two clean (unstamped) visa pages at each time entry is sought.  Otherwise, the traveler (even when in possession of a valid Ethiopian visa) may be refused entry into Ethiopia."
+            },
+        ]
+    },
+    {
+        id: 2,
+        name: "BANKS & BUSINESS HOURS",
+        descs: [
+            {
+                name: "Banks",
+                description: "Monday – Friday: 0800 – 1700"
+            },
+            {
+                name: "",
+                description: "Saturday: 0800 – 1600"
+            },
+            {
+                name: "",
+                description: "All banks in Ethiopia offer foreign exchange services. Most banks have ATM machine working 24 hrs for VISA cards. Dashen Bank offers service for Master Card."
+            },
+            {
+                name: "Shops",
+                description: "Monday – Saturday: 0830 – 1230 & 1400 – 1900"
+            },
+            {
+                name: "",
+                description: "Some shops are open on Sundays"
+            },
+            {
+                name: "Restaurants",
+                description: "Monday – Sunday: 1100 – 2100"
+            },
+            {
+                name: "",
+                description: "Some restaurants are closed on Mondays"
+            },
+        ]
+    },
+    {
+        id: 3,
+        name: "PUBLIC HOLIDAYS",
+        descs: [
+            {
+                name: "",
+                description: "January 7th Ethiopian Christmas (Genna)"
+            },
+            {
+                name: "",
+                description: "January 18th Epiphany Eve (Timkat Eve)"
+            },
+            {
+                name: "",
+                description: "January 19th Epiphany (Timkat)"
+            },
+            {
+                name: "",
+                description: "March 2nd Victory of Adwa Day"
+            },
+            {
+                name: "",
+                description: "April 6th Patriots Victory Day"
+            },
+            {
+                name: "",
+                description: "April 5th, 2015 Palm Sunday (Hosanna)"
+            },
+            {
+                name: "",
+                description: "April 10, 2015 Ethiopian Good Friday (Seklet)"
+            },
+            {
+                name: "",
+                description: "April 12, 2015 Ethiopian Easter (Fasika)"
+            },
+            {
+                name: "",
+                description: "**NB: Palm Sunday, Good Friday & Easter dates change every year"
+            },
+            {
+                name: "",
+                description: "May 1st May Day"
+            },
+            {
+                name: "",
+                description: "May 28th Downfall of the Dergue (Since 1991)"
+            },
+            {
+                name: "",
+                description: "September 11th Ethiopian New Year (Enkutatash)"
+            },
+            {
+                name: "",
+                description: "September 26th Eve of Meskal (Demera)"
+            },
+            {
+                name: "",
+                description: "September 27th Finding of the True Cross (Meskal)"
+            },
+            {
+                name: "",
+                description: "**NB: Most of the above dates shift forward one day on leap years. In addition to the above dates are the holidays associated with Ramadan which follow a lunar calendar and vary annually."
+            },
+        ]
+    },
+    {
+        id: 4,
+        name: "ELECTRIC POWER",
+        descs: [
+            {
+                name: "",
+                description: "The electric power supply is generally 220 volts running on 50 Hz. Plugs usually have two thin round pins; adopters are readily available for purchase in local shops. Electric supply is mostly stable in Addis Ababa and major cities. In the case of blackouts, there are often generators in place in hotels and big buildings. For more rural locations, we reccommend carrying extra batteries for cameras since electric supply may be irregular."
+            },
+        ]
+    },
+    {
+        id: 5,
+        name: "SOUVENIRS",
+        descs: [
+            {
+                name: "",
+                description: "All kinds of souvenirs are available in several shops. However please note that some items like antiques and animal skins require an export permit. Kindly advise your guide or representative from your travel agent before purchasing items of such kind."
+            },
+        ]
+    },
+    {
+        id: 6,
+        name: "CLOTHS TO WEAR & ETHIOPIAN CLOTHING",
+        descs: [
+            {
+                name: "",
+                description: "Most places in the north are located at altitudes between 1,800 and 3,000 metres above sea level. Mornings and evenings are usually cool thus a light jacket or sweater is recommended. During the day it can get a bit hot and dry with temperatures ranging from 25°C to 30°C. It seldom rains from October to April which is the dry season. In the Omo Valley, the rainy season is from March – May therefore we advise that clients bring along a raincoat/umbrella, boots/comfortable walking shoes suitable in the rain, long sleeve shirts, sweater/jacket since it may get cooler in the evenings, mosquito repellent."
+            },
+            {
+                name: "",
+                description: "The Ethiopian traditional dress is one of a kind. In some central and northern areas, women’s traditional clothes, habesha kemis, are often made from cloth called shemma, cotton cloth woven in long strips which are then sewn together. Sometimes shiny threads are woven into the fabric for an elegant effect. The bottom of the garment or shirt may be ornamented with patterns. The dresses are usually white with some color above the lower hem. Men wear pants and a knee-length shirt with a white collar, and perhaps a sweater. Men as well as women wear shawls, the netela. The shawls are worn in a different style for different occasions. These traditional clothes are still worn on a day-to-day-basis in the countryside. In cities and towns, western clothes are popular. However, on special occasions such as New Year (Enkutatash), Christmas (Genna) or weddings, some wear traditional clothes."
+            },
+        ]
+    },
+    {
+        id: 7,
+        name: "MEDICATION",
+        descs: [
+            {
+                name: "",
+                description: "Travelers are advised to travel well-prepared. We recommend that you carry a first aid kit, sufficient supply of prescription medication and over the counter medications i.e. Aspirin, Pepto-Bismol, milk of magnesium, eye drops etc. Please be sure to only drink bottled water. One must be careful not to underestimate the effects of the sun. Plenty of sun cream, a good sun hat and gradual adjustment is recommended. Further all recommended immunizations should be done before travel. It is mandatory to have vaccination against cholera if visitors have visited any cholera infected areas six days prior to arrival in Ethiopia."
+            },
+            {
+                name: "",
+                description: "NB: We appreciate any prior information regarding allergies especially food allergies"
+            },
+        ]
+    },
+    {
+        id: 8,
+        name: "INTERNET",
+        descs: [
+            {
+                name: "",
+                description: "One can easily find Internet cafes in Addis Ababa and in most major cities. Internet wifi services are also available in most up market hotels and cafes. Internet services extend only up to Arba Minch in the South of the country."
+            },
+        ]
+    },
+    {
+        id: 9,
+        name: "SAFETY",
+        descs: [
+            {
+                name: "",
+                description: "Ethiopia can be expressed as one of the safest countries in Africa. One can freely walk around on the main streets with relative ease and sense of security. We do advise that you keep things you cannot do without at your hotel i.e. your passport, large amounts of cash, expensive jewellery etc."
+            },
+        ]
+    },
+    {
+        id: 10,
+        name: "LOCAL CURRENCY & EXCHANGE INFORMATION",
+        descs: [
+            {
+                name: "",
+                description: "The local currency is called Birr (ETB) and is made up of 100 cents. There are units of 1, 5, 10, 50 and 100 Birr bank notes as well as coin units (santim) of 5 cents, 10 cents, 25 cents, 50 cents and 1 birr cents."
+            },
+            {
+                name: "",
+                description: "Exchange of currency is done very easily at either the airport on arrival, at one of the many authorized banks or 4/5 star hotels. There is no limitation to the amount of foreign currency visitors can import into the country but it must be declared on the currency declaration form on arrival. This form must be presented to the Customs authority at the time of departure. Visitors may change back any excess Ethiopian birr to foreign currency at the airport before departure. If you do have birr to cash at the airport, you must, in addition to the currency declaration form, bring with you all receipts for exchange transactions. US dollars are generally the best currency to bring. For current exchange rates visit www.xe.com."
+            },
+            {
+                name: "",
+                description: "Travellers’ cheques are difficult to exchange in Ethiopia and credit cards are not widely accepted. Further smaller towns often do not have exchange facilities."
+            },
+        ]
+    },
+]

@@ -5,6 +5,10 @@ import { Provider } from 'react-redux'
 import { store, persistor } from '../redux/store'
 import { PersistGate } from 'redux-persist/integration/react'
 import React from 'react'
+import Footer from './Footer'
+import TipModal from './TipModal'
+import PicModal from './PicModal'
+import FacilModal from './FacilModal'
 
 
 export default function RootLayout({
@@ -40,7 +44,11 @@ export default function RootLayout({
           <body>
             <PersistGate loading={null} persistor={persistor} >
               <Navbar />
+              <TipModal />
+              <FacilModal />
+              <PicModal />
               {children}
+              <Footer />
             </PersistGate>
           </body>
         </html>

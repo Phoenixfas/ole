@@ -4,6 +4,9 @@ import tipModalToggleReducer from "./tipModalToggleSlice";
 import picModalToggleReducer from "./picModalToggleSlice"
 import activeTipReducer from "./activeTipSlice";
 import activePicReducer from "./activePicSlice";
+import headerColorToggleReducer from "./headerColorToggleSlice";
+import activeFacilReducer from "./activeFacilSlice";
+import facilModalToggleReducer from "./facilModalToggleSlice";
 
 export const rootReducer = combineReducers({
   initHeroToggle: initHeroToggleReducer,
@@ -11,6 +14,9 @@ export const rootReducer = combineReducers({
   picModalToggle: picModalToggleReducer,
   activeTip: activeTipReducer,
   activePic: activePicReducer,
+  headerColorToggle: headerColorToggleReducer,
+  activeFacil: activeFacilReducer,
+  facilModalToggle: facilModalToggleReducer,
 });
 
 export type RootState = ReturnType<typeof rootReducer>;

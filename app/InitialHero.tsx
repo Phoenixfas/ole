@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import style from '../styles/Home.module.css'
 import { useState, useEffect } from 'react'
 import { AnimatePresence, motion } from 'framer-motion';
 import { useAppSelector, useAppDispatch } from '@/redux/hooks';
@@ -52,45 +53,45 @@ export default function InitialHero() {
     <>
         <AnimatePresence>
             {initHeroToggle && (
-                <motion.div initial={{opacity: 0}} animate={{ opacity: 1 }} exit={{opacity:0}} transition={{duration: .3, ease: "linear"}} className='initHero' >
-                    <div className="initHero__imgContainer">
-                        <div id='hero_slider' className="initHero__imgsSlider">
+                <motion.div initial={{opacity: 0}} animate={{ opacity: 1 }} exit={{opacity:0}} transition={{duration: .3, ease: "linear"}} className={style.initHero} >
+                    <div className={style.initHero__imgContainer}>
+                        <div id='hero_slider' className={style.initHero__imgsSlider}>
                             <AnimatePresence>
                                 {slide === 1 && (
-                                    <motion.div key={1} initial={{filter: "brightness(0.2)", scale: 1.1}} animate={{filter: ["brightness(0.2)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(0.2)"], scale: [1.1, 1]}} transition={{duration: 5, ease: "easeInOut"}} className="initHero__img">
+                                    <motion.div key={1} initial={{filter: "brightness(0.2)", scale: 1.1}} animate={{filter: ["brightness(0.2)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(0.2)"], scale: [1.1, 1]}} transition={{duration: 5, ease: "easeInOut"}} className={style.initHero__img}>
                                         <Image src='/images/home/hero/lalibela.jpg' alt='hero' fill />
-                                        {/* <div className="initHero__textContainer">
-                                            <div className="initHero__text">
+                                        {/* <div className={style.initHero__textContainer}>
+                                            <div className={style.initHero__text}>
                                                 <H1 lines={["Escape to", "Paradise"]} />
                                             </div>
                                         </div> */}
                                     </motion.div>
                                 )}
                                 {slide === 2 && (
-                                    <motion.div key={2} initial={{filter: "brightness(0.2)", scale: 1.1}} animate={{filter: ["brightness(0.2)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(0.2)"], scale: [1.1, 1]}} transition={{duration: 5, ease: "easeInOut"}} className="initHero__img">
+                                    <motion.div key={2} initial={{filter: "brightness(0.2)", scale: 1.1}} animate={{filter: ["brightness(0.2)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(0.2)"], scale: [1.1, 1]}} transition={{duration: 5, ease: "easeInOut"}} className={style.initHero__img}>
                                         <Image src='/images/home/hero/gondar.jpg' alt='hero' fill />
-                                        {/* <div className="initHero__textContainer">
-                                            <div className="initHero__text">
+                                        {/* <div className={style.initHero__textContainer}>
+                                            <div className={style.initHero__text}>
                                                 <H1 lines={["Discover", "Hidden Gems"]} />
                                             </div>
                                         </div> */}
                                     </motion.div>
                                 )}
                                 {slide === 3 && (
-                                    <motion.div key={3} initial={{filter: "brightness(0.2)", scale: 1.1}} animate={{filter: ["brightness(0.2)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(0.2)"], scale: [1.1, 1]}} transition={{duration: 5, ease: "easeInOut"}} className="initHero__img">
+                                    <motion.div key={3} initial={{filter: "brightness(0.2)", scale: 1.1}} animate={{filter: ["brightness(0.2)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(0.2)"], scale: [1.1, 1]}} transition={{duration: 5, ease: "easeInOut"}} className={style.initHero__img}>
                                         <Image src='/images/home/hero/omo.png' alt='hero' fill />
-                                        {/* <div className="initHero__textContainer">
-                                            <div className="initHero__text">
+                                        {/* <div className={style.initHero__textContainer}>
+                                            <div className={style.initHero__text}>
                                                 <H1 lines={["Create", "Memories That", "Last a Lifetime"]} />
                                             </div>
                                         </div> */}
                                     </motion.div>
                                 )}
                                 {slide === 4 && (
-                                    <motion.div key={4} initial={{filter: "brightness(0.2)", scale: 1.1}} animate={{filter: ["brightness(0.2)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(0.2)"], scale: [1.1, 1]}} transition={{duration: 5, ease: "easeInOut"}} className="initHero__img">
+                                    <motion.div key={4} initial={{filter: "brightness(0.2)", scale: 1.1}} animate={{filter: ["brightness(0.2)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(0.2)"], scale: [1.1, 1]}} transition={{duration: 5, ease: "easeInOut"}} className={style.initHero__img}>
                                         <Image src='/images/home/hero/danakil.jpg' alt='hero' fill />
-                                        {/* <div className="initHero__textContainer">
-                                            <div className="initHero__text">
+                                        {/* <div className={style.initHero__textContainer}>
+                                            <div className={style.initHero__text}>
                                                 <H1 lines={["Unforgettable", "Experiences"]} />
                                             </div>
                                         </div> */}
@@ -99,44 +100,44 @@ export default function InitialHero() {
                             </AnimatePresence>
                         </div>
                     </div>
-                    <div className="initHero__textContainer">
-                        {slide === 1 && <div className="initHero__text">
+                    <div className={style.initHero__textContainer}>
+                        {slide === 1 && <div className={style.initHero__text}>
                             <H1 lines={["Escape to", "Paradise"]} />
                         </div>}
-                        {slide === 2 && <div className="initHero__text">
+                        {slide === 2 && <div className={style.initHero__text}>
                             <H1 lines={["Discover", "Hidden Gems"]} />
                         </div>}
-                        {slide === 3 && <div className="initHero__text">
+                        {slide === 3 && <div className={style.initHero__text}>
                             <H1 lines={["Create", "Memories That", "Last a Lifetime"]} />
                         </div>}
-                        {slide === 4 && <div className="initHero__text">
+                        {slide === 4 && <div className={style.initHero__text}>
                             <H1 lines={["Unforgettable", "Experiences"]} />
                         </div>}
                     </div>
-                    <div className="initHero__progContainer">
-                        <div className="initHero__prog">
-                            <div className="initHero__prog__outer">
-                                {slide === 1 && <motion.div variants={progVariant} initial={'init'} animate={'anim'} className={`initHero__prog__inner`}></motion.div>}
+                    <div className={style.initHero__progContainer}>
+                        <div className={style.initHero__prog}>
+                            <div className={style.initHero__prog__outer}>
+                                {slide === 1 && <motion.div variants={progVariant} initial={'init'} animate={'anim'} className={style.initHero__prog__inner}></motion.div>}
                             </div>
                         </div>
-                        <div className="initHero__prog">
-                            <div className="initHero__prog__outer">
-                                {slide === 2 && <motion.div variants={progVariant} initial={'init'} animate={'anim'} className={`initHero__prog__inner`}></motion.div>}
+                        <div className={style.initHero__prog}>
+                            <div className={style.initHero__prog__outer}>
+                                {slide === 2 && <motion.div variants={progVariant} initial={'init'} animate={'anim'} className={style.initHero__prog__inner}></motion.div>}
                             </div>
                         </div>
-                        <div className="initHero__prog">
-                            <div className="initHero__prog__outer">
-                                {slide === 3 && <motion.div variants={progVariant} initial={'init'} animate={'anim'} className={`initHero__prog__inner`}></motion.div>}
+                        <div className={style.initHero__prog}>
+                            <div className={style.initHero__prog__outer}>
+                                {slide === 3 && <motion.div variants={progVariant} initial={'init'} animate={'anim'} className={style.initHero__prog__inner}></motion.div>}
                             </div>
                         </div>
-                        <div className="initHero__prog">
-                            <div className="initHero__prog__outer">
-                                {slide === 4 && <motion.div variants={progVariant} initial={'init'} animate={'anim'} className={`initHero__prog__inner`}></motion.div>}
+                        <div className={style.initHero__prog}>
+                            <div className={style.initHero__prog__outer}>
+                                {slide === 4 && <motion.div variants={progVariant} initial={'init'} animate={'anim'} className={style.initHero__prog__inner}></motion.div>}
                             </div>
                         </div>
                     </div>
-                    <div className="initHero__skip">
-                        <div className="initHero__skipBtn" onClick={() => dispatch(toggleInitHero(false))}>
+                    <div className={style.initHero__skip}>
+                        <div className={style.initHero__skipBtn} onClick={() => dispatch(toggleInitHero(false))}>
                             Skip
                         </div>
                     </div>
