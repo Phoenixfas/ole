@@ -28,7 +28,7 @@ export const initHeroToggleSlice = createSlice({
 const persistConfig = {
   key: "initHeroToggle",
   storage,
-  // whitelist: ["value"],
+  whitelist: ["value"],
 };
 
 export const { toggleInitHero } = initHeroToggleSlice.actions;

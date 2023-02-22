@@ -17,19 +17,19 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
 
-  React.useEffect(() => {
-    window.addEventListener('beforeunload', handleBeforeUnload);
-    return () => {
-      window.removeEventListener('beforeunload', handleBeforeUnload);
-    };
-  }, []);
+  // React.useEffect(() => {
+  //   window.addEventListener('beforeunload', handleBeforeUnload);
+  //   return () => {
+  //     window.removeEventListener('beforeunload', handleBeforeUnload);
+  //   };
+  // }, []);
 
-  const handleBeforeUnload = (event: any) => {
-    // Check if the event was caused by the user closing the tab
-    if (event.currentTarget.performance.navigation.type === PerformanceNavigation.TYPE_NAVIGATE) {
-      localStorage.clear(); // or sessionStorage.clear() if you're using sessionStorage
-    }
-  };
+  // const handleBeforeUnload = (event: any) => {
+  //   // Check if the event was caused by the user closing the tab
+  //   if (event.currentTarget.performance.navigation.type === PerformanceNavigation.TYPE_NAVIGATE) {
+  //     localStorage.clear(); // or sessionStorage.clear() if you're using sessionStorage
+  //   }
+  // };
 
 
   return (
