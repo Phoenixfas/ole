@@ -8,6 +8,8 @@ import Link from 'next/link'
 export default function Adventures() {
     const tours1 = tours.slice(0, 4)
     const tours2 = tours.slice(4, 8)
+
+    
   return (
     <div className={style.adventures}>
         <h1><i>Adventures</i> to get you inspired</h1>

@@ -113,7 +113,8 @@
     left: 0;
     width: 100%;
     padding: 10px;
-    color: #fdbc00;
+    color: #000;
+    font-size: 1.2rem;
     font-family: 'Freehand', cursive;
     text-align: center;
     transition: 0.3s;

@@ -108,7 +108,7 @@ a {
   flex-direction: column;
   align-items: center;
   background-color: #fdbc00;
-  color: #fff;
+  color: #000;
 }
 .footer__menu{
   position: relative;
@@ -127,7 +127,7 @@ a {
   transition: .3s;
 }
 .footer__menu a:hover{
-  color: #000;
+  color: #fff;
 }
 .footer__menu hr{
   position: absolute;
@@ -152,7 +152,7 @@ a {
   transition: .3s;
 }
 .footer__socials a:hover{
-  color: #000;
+  color: #fff;
 }
 .footer__copy{
   width: 100%;
@@ -162,7 +162,7 @@ a {
   justify-content: center;
   font-size: 0.9rem;
   background-color: #b78900;
-  color: #ffffff88;
+  color: #00000088;
   text-align: center;
 }
 .footer__copy a{
