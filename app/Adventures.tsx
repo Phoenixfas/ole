@@ -6,8 +6,9 @@ import tours from '@/data/tours'
 import Link from 'next/link'
 
 export default function Adventures() {
-    const tours1 = tours.slice(0, 4)
-    const tours2 = tours.slice(4, 8)
+    const half = Math.ceil(tours.length / 2)
+    const tours1 = tours.slice(0, half)
+    const tours2 = tours.slice(half, tours.length)
 
     
   return (
@@ -30,7 +31,7 @@ const Cards = ({t, alignLeft}: {t: any, alignLeft: boolean}) => {
                     <div className={style.adventures__cardImg}>
                         <Image src={tour.image} alt={tour.name} fill />
                     </div>
-                    <Link href={"/"} className={style.adventures__cardInfo}>
+                    <Link href={`/tours/${tour.id}`} className={style.adventures__cardInfo}>
                         <p>0{tour.id}</p>
                         <h2>{tour.name}</h2>
                         <span><BsArrowRight size={35} /></span>

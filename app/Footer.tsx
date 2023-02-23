@@ -19,7 +19,7 @@ export default function Footer() {
                     <hr color='#ffffff88' />
                 </div>
                 <div className="footer__about">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, amet nobis totam assumenda earum mollitia dicta consequuntur officia tempore! Inventore possimus ex sint voluptas. Distinctio impedit, corrupti ea nulla reiciendis recusandae cupiditate dolorem eius exercitationem cumque sequi sed corporis doloribus qui ullam ut voluptas quae! Nihil, assumenda fugit error vero dolorum impedit, 
+                    One Love Ethiopia is a premier tour and travel company based in Ethiopia, offering unique and personalized experiences for travelers looking to explore the rich history, culture, and natural beauty of the country. With a team of experienced guides and a commitment to sustainable tourism, One Love Ethiopia promises unforgettable adventures and meaningful connections.
                 </div>
                 <div className="footer__socials">
                     <Link target="_blank" href={"https://facebook.com/"}>

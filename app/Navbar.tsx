@@ -1,34 +1,44 @@
 'use client'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import { FaSearch } from 'react-icons/fa'
 import { useAppSelector } from '@/redux/hooks'
 import { motion } from 'framer-motion'
+import tours from '@/data/tours'
 
 export default function Navbar() {
+    const router = useRouter()
     const [searchActive, setSearchActive] = useState(false)
     const [searchText, setSearchText] = useState('')
+    const [filteredData, setFilteredData] = useState([])
+
+    const t: any = tours
 
     const onChange = (e: any) => {
         const keyword = e.target.value;
-        // const newFilter = data.articles.filter((article: any) => {
-        //   return article.title.toLowerCase().includes(keyword.toLowerCase())
-        // })
+        const newFilter = t.filter((tour: any) => {
+          return tour.name.toLowerCase().includes(keyword.toLowerCase())
+        })
         if(keyword === "") {
-        //   setFilteredData([])
+          setFilteredData([])
           setSearchText("")
         }
 
-        // setFilteredData( data.data.filter((tour: any) => tour.name.toLowerCase().includes(keyword.toLowerCase())))
+        setFilteredData(t.filter((tour: any) => tour.name.toLowerCase().includes(keyword.toLowerCase())))
         setSearchText(keyword)
     }
     const checkEmpty = (e: any) => {
         if(e.target.value === "") {
-            // setFilteredData([])
+            setFilteredData([])
             setSearchText("")
         }
     }
+    const clearSearch = () => {
+        setFilteredData([])
+        setSearchText("")
+      }
 
     const initHeroToggle = useAppSelector(state => state.initHeroToggle.value)
     const headerColorToggled = useAppSelector(state => state.headerColorToggle.value)
@@ -51,14 +61,13 @@ export default function Navbar() {
                 <div className={'navbar_search'}>
                     <div className={`${'searchInput'} ${searchActive && 'searchActive'} ${!headerColorToggled && 'searchActive__black'}`}>
                         <input className='min-w-[250px] outline-none border-none rounded-full placeholder:text-sm px-3 py-2 text-black text-sm' placeholder='Search here' type="text" name='search' value={searchText} onChange={onChange} onKeyDown={checkEmpty} />
-                        {/* {filteredData.length != 0 && (
-                            <div className="absolute bottom-0 w-full translate-y-[110%] bg-white text-black shadow-xl rounded-xl p-3" >
-                            {data && filteredData.slice(0, 10).map((tour: any, index: any) => (
-                                <div className='px-5 py-3 duration-300 hover:bg-gray-100 hover:shadow-md hover:rounded-xl cursor-pointer' key={index}>
+                        {filteredData.length != 0 && (
+                            <div className="search-results" >
+                            {t && filteredData.slice(0, 10).map((tour: any, index: any) => (
+                                <div className='search-item' key={index}>
                                     <p id='blog-search' onClick={() => {
                                         clearSearch()
-                                        dispatch(changeActiveTour(tour))
-                                        router.push('/tours/view')
+                                        router.push(`/tours/${tour.id}`)
                                         }} 
                                     >
                                         {tour.name.charAt(0).toUpperCase() + tour.name.slice(1)}
@@ -66,7 +75,7 @@ export default function Navbar() {
                                 </div>
                             ))}
                             </div>
-                        )} */}
+                        )}
                     </div>
                     <div onClick={() => setSearchActive(!searchActive)}>
                         <FaSearch size={25} style={{cursor: "pointer"}} color={headerColorToggled ? "#fff" : "#000"} />

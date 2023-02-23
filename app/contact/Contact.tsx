@@ -1,4 +1,5 @@
 'use client'
+import { useState } from "react"
 import style from '@/styles/Contact.module.css'
 import Link from 'next/link'
 import { SiGmail } from "react-icons/si"
@@ -6,9 +7,38 @@ import { MdLocationPin, MdCall } from  "react-icons/md"
 
 
 export default function Contact() {
-    const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const [name, setName] = useState<string>("")
+    const [email, setEmail] = useState<string>("")
+    const [subject, setSubject] = useState<string>("")
+    const [message, setMessage] = useState<string>("")
+
+    const [done, setDone] = useState<boolean>(false)
+    const [error, setError] = useState<string>("")
+
+
+    const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        alert('submitted')
+
+        if(!name || !email || !subject || !message) {
+            setError("Please fill all fields")
+            setTimeout(() => setError(""), 5000)
+            return
+        }
+
+        try{
+            setDone(true)
+            setTimeout(() => setDone(false), 5000)
+            setError("")
+
+            setName("")
+            setEmail("")
+            setSubject("")
+            setMessage("")
+
+        } catch(err: any){
+            setError(err.message)
+        }
+          
     }
   return (
     <div className={style.contact}>
@@ -71,18 +101,21 @@ export default function Contact() {
         <div className={style.message__container}>
         <div className={style.message}>
             <form className={style.message__form}  onSubmit={onSubmit}>
+                {done && (
+                    <p style={{textAlign: "center", padding: "3px", borderRadius: "3px", backgroundColor: "green", color: "#fff"}}>Your message has been sent. Thank you!</p>
+                )}
+                {error && (
+                    <p style={{textAlign: "center", padding: "3px", borderRadius: "3px", backgroundColor: "orangered", color: "#fff"}}>{error}</p>
+                )}
                 <label>Name</label>
-                <input required type="text" name="user_name" />
+                <input required type="text" name="user_name" value={name} onChange={(e) => setName(e.target.value)} />
                 <label>Email</label>
-                <input required type="text" name="user_email"/>
+                <input required type="text" name="user_email" value={email} onChange={(e) => setEmail(e.target.value)} />
                 <label>Subject</label>
-                <input required type="text" name="user_subject"/>
+                <input required type="text" name="user_subject" value={subject} onChange={(e) => setSubject(e.target.value)} />
                 <label>Message</label>
-                <textarea required name="message"></textarea>
+                <textarea required name="message" value={message} onChange={(e) => setMessage(e.target.value)} ></textarea>
                 <button>Send</button>
-                {/* {done && (
-                    <p className={style.m_done}>Your message has been sent. Thank you!</p>
-                )} */}
             </form>
         </div>
     </div>
