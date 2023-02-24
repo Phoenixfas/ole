@@ -8,8 +8,12 @@ export default function About() {
             <Image src="/images/logo/logo_text_light.png" alt="One Love Ethiopia Tours" width={500} height={500} />
         </div>
         <div className={style.about__desc}>
-            <p>One love Ethiopia Tours team of dedicated professionals have created unique immersion tours, designed to provide travelers with an authentic experience while also contributing to the local economy. Their enthusiastic approach to sustainable tourism has helped to change the perception of Ethiopia and has inspired others to follow in their footsteps.</p>
-            <p>As the Ethiopian proverb goes, "little by little, the egg walks on both legs." One love Ethiopia tours team are making a positive impact on their community and are leading the way in sustainable tourism in Ethiopia.</p>
+            <p>One Love Ethiopia Tours and Car Rental is a reputable travel and transportation company based in Addis Ababa, Ethiopia. Established in 2010, the company has been providing exceptional services to tourists and business travelers from all over the world.</p>
+            <p>Our primary focus is on tourism and transportation services, including car rentals, airport transfers, and tour packages. We have a wide range of well-maintained and comfortable vehicles, including sedans, SUVs, vans, and buses that are perfect for any type of travel, from short trips around the city to longer excursions across the country.</p>
+            <p>One Love Ethiopia Tours and Car Rental has a team of experienced and knowledgeable drivers and tour guides who are dedicated to making your travel experience enjoyable and memorable. Our tour packages cover the best tourist destinations in Ethiopia, including historical sites, natural attractions, and cultural experiences.</p>
+            <p>We take pride in providing personalized services that cater to the unique needs and preferences of our clients. We offer flexible tour packages and customized itineraries to ensure that you get the most out of your travel experience. Our customer support team is available 24/7 to assist you with any questions or concerns you may have.</p>
+            <p>At One Love Ethiopia Tours and Car Rental, we are committed to promoting responsible tourism practices and supporting local communities. We work with local businesses and communities to provide sustainable tourism solutions that benefit everyone involved.</p>
+            <p>We are reliable and trustworthy company that offers top-quality travel and transportation services in Ethiopia. Whether you are a tourist or a business traveler, we are committed to providing you with a memorable and enjoyable experience that will exceed your expectations.</p>
         </div>
         <div className={style.about__staff}>
             <div className={style.about__staffImg}>
@@ -18,6 +22,8 @@ export default function About() {
             <div className={style.about__staffDesc}>
                 <p><span>Abreham Yohannes</span> is a manager and guide with over 10 years of experience in the tourism sector, following his attendance at high school in Debrezeyit. In 2008, he to become a guide and has been guiding ever since.</p>
                 <p>During a trip abroad, he noticed that Ethiopia was largely misunderstood, with most people associating the country with the famine of 1984-1985. Inspired by this observation, he embarked on a project that would eventually become "One Love Ethiopia Tours and Car Rental". His aim was to promote cultural exchange and to improve the living standards of local communities through sustainable tourism.</p>
+                <p>One love Ethiopia Tours team of dedicated professionals have created unique immersion tours, designed to provide travelers with an authentic experience while also contributing to the local economy. Their enthusiastic approach to sustainable tourism has helped to change the perception of Ethiopia and has inspired others to follow in their footsteps.</p>
+                <p>As the Ethiopian proverb goes, "little by little, the egg walks on both legs." One love Ethiopia tours team are making a positive impact on their community and are leading the way in sustainable tourism in Ethiopia.</p>
             </div>
         </div>
         <div className={style.about__staff}>
