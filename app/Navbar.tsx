@@ -49,7 +49,7 @@ export default function Navbar() {
         {!initHeroToggle && (
             <motion.div initial={{y: "-100%"}} animate={{y: "0%"}} transition={{duration: .3, delay: .3}} className={'navbar'}>
                 <div className={'navbar_logo'}>
-                    <Image src="/images/logo.png" alt="logo" width={100} height={100} />
+                    <Image src={headerColorToggled ? "/images/logo/logo_light.png" : "/images/logo/logo_dark.png"} alt="logo" width={100} height={100} />
                 </div>
                 <div className={`navbar_links ${!headerColorToggled && "navbar_links_black"}`}>
                     <Link href="/">Home</Link>

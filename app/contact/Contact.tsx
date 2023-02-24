@@ -16,8 +16,8 @@ export default function Contact() {
     const [error, setError] = useState<string>("")
 
 
-    const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault()
+    const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        // e.preventDefault()
 
         if(!name || !email || !subject || !message) {
             setError("Please fill all fields")
@@ -25,20 +25,6 @@ export default function Contact() {
             return
         }
 
-        try{
-            setDone(true)
-            setTimeout(() => setDone(false), 5000)
-            setError("")
-
-            setName("")
-            setEmail("")
-            setSubject("")
-            setMessage("")
-
-        } catch(err: any){
-            setError(err.message)
-        }
-          
     }
   return (
     <div className={style.contact}>
@@ -53,7 +39,7 @@ export default function Contact() {
                         scrolling="no"
                         marginHeight={0}
                         marginWidth={0}
-                        src="https://maps.google.com/maps?width=650&amp;height=242&amp;hl=en&amp;q=9.000358217387392, 38.7879154142762&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                        src="https://maps.google.com/maps?q=2Q3H+PQF%20One%20Love%20Ethiopia%20Tours%20&%20Car%20Rent.,%20Abay%20Insurance%20SC.%20Head%20Office,%20306%203rd%20floor,%20Addis%20Ababa&t=&z=13&ie=UTF8&iwloc=&output=embed"
                     ></iframe>
                 </div>
             </div>
@@ -61,18 +47,20 @@ export default function Contact() {
 
 
         <div className={style.contact__cardsContainer}>
-            <Link href={"mailto:"}>
+            <Link href={"mailto:Oneloveethiopia32@gmail.com"}>
                 <div className={style.contact__card}>
                 <div className={style.contact__icon}>
                     <SiGmail className={style.team__icon} size={50} />
                 </div>
                 <h3>Mail Here</h3>
-                <p>hello@olet.com</p>
+                <p>info@oneloveethiopiatours.com</p>
+                <p>Oneloveethiopia32@gmail.com</p>
+                <p>Selam@oneloveethiopiatours.com</p>
                 </div>
             </Link>
             <Link
                 href={
-                "https://www.google.com.et/maps/place/Kaldi's+Coffee/@9.0003084,38.7877521,20z/data=!4m5!3m4!1s0x164b85ba01780cc5:0x6b9f759d06cec764!8m2!3d9.0003136!4d38.7879323?hl=en"
+                "https://maps.app.goo.gl/pN1aFDD3HhC2eDdu8"
                 }
             >
                 <div className={style.contact__card}>
@@ -81,44 +69,41 @@ export default function Contact() {
                 </div>
                 <h3>Visit Here</h3>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, animi?
+                    Atlas, Abay Insurance building, 3rd floor
                 </p>
                 </div>
             </Link>
 
-            <Link href={"tel:+251 911 121 314"}>
+            <Link href={"tel:+25191 122 3399"}>
                 <div className={style.contact__card}>
                 <div className={style.contact__icon}>
                     <MdCall className={style.team__icon} size={50} />
                 </div>
                 <h3>Call Here</h3>
-                <p>+251-911-121-314</p>
-                <p>+251-911-121-314</p>
+                <p>+251-911-223-399</p>
+                <p>+251-911-951-312</p>
                 </div>
             </Link>
         </div>
 
         <div className={style.message__container}>
-        <div className={style.message}>
-            <form className={style.message__form}  onSubmit={onSubmit}>
-                {done && (
-                    <p style={{textAlign: "center", padding: "3px", borderRadius: "3px", backgroundColor: "green", color: "#fff"}}>Your message has been sent. Thank you!</p>
-                )}
-                {error && (
-                    <p style={{textAlign: "center", padding: "3px", borderRadius: "3px", backgroundColor: "orangered", color: "#fff"}}>{error}</p>
-                )}
-                <label>Name</label>
-                <input required type="text" name="user_name" value={name} onChange={(e) => setName(e.target.value)} />
-                <label>Email</label>
-                <input required type="text" name="user_email" value={email} onChange={(e) => setEmail(e.target.value)} />
-                <label>Subject</label>
-                <input required type="text" name="user_subject" value={subject} onChange={(e) => setSubject(e.target.value)} />
-                <label>Message</label>
-                <textarea required name="message" value={message} onChange={(e) => setMessage(e.target.value)} ></textarea>
-                <button>Send</button>
-            </form>
+            <div className={style.message}>
+                <form className={style.message__form} onSubmit={onSubmit} action="mailto:woodhulabe123@gmail.com" method="post" encType="text/plain">
+                    {error && (
+                        <p style={{textAlign: "center", padding: "3px", borderRadius: "3px", backgroundColor: "orangered", color: "#fff"}}>{error}</p>
+                    )}
+                    <label>Name</label>
+                    <input required type="text" name="name" id="name" value={name} onChange={(e) => setName(e.target.value)} />
+                    <label>Email</label>
+                    <input required type="text" name="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                    <label>Subject</label>
+                    <input required type="text" name="subject" id="subject" value={subject} onChange={(e) => setSubject(e.target.value)} />
+                    <label>Message</label>
+                    <textarea required name="message" id="message" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
         </div>
-    </div>
     </div>
   )
 }

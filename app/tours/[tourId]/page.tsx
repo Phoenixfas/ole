@@ -4,6 +4,7 @@ import Image from "next/image"
 import tours from "@/data/tours"
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax'
 import ActivitySlider from "./ActivitySlider"
+import Link from "next/link"
 
 export default function page({params}: {params: {tourId: string}}) {
     const {tourId} = params;
@@ -57,6 +58,9 @@ export default function page({params}: {params: {tourId: string}}) {
                             {tour.nb && (
                                 <p><span>NB:</span> {tour.nb}</p>
                             )}
+                        </div>
+                        <div className={style.bookBtn}>
+                            <Link href={`/tours/book`}>Book Now</Link>
                         </div>
                     </div>
                 </div>

@@ -214,3 +214,41 @@
   border-radius: 10px;
   color: #fff;
 }
+  
+
+/*///////////////////////////////////////////////////////////////////// @media queries //////////////////////////////////////////////////////////////*/ 
+
+
+@media only screen and (max-width: 599px){
+  .hero{
+    height: 500px;
+  }
+  .message__container{
+    max-width: 100%;
+  }
+  .hero__text__title{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    max-width: 100%;
+  }
+  .mapHolder{
+    width: 90%;
+    transform: translateY(-30%);
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px){
+  .message__container{
+    max-width: 70%;
+  }
+  .hero{
+    height: 500px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1000px){
+  .message__container{
+    max-width: 60%;
+  }
+  .hero{
+    height: 500px;
+  }
+}

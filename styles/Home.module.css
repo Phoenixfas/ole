@@ -167,6 +167,11 @@
   filter: brightness(0.65);
   animation: heroEnter 1s ease-in-out;
 }
+.hero__img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 @keyframes heroEnter{
   0%{
     scale: 1.5;
@@ -450,7 +455,7 @@
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
-  z-index: 100;
+  z-index: 999999;
 }
 .tip__modal::-webkit-scrollbar{
   display: none;
@@ -474,7 +479,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(100%, -100%);
+  transform: translate(50%, -50%);
   background-color: #fdbc00;
   color: #fff;
   border-radius: 9999px;
@@ -591,6 +596,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   font-family: 'Freehand', cursive;
   font-size: 1.5rem;
   color: #000;
@@ -630,15 +636,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 100;
+  z-index: 999999;
 }
 .pic__modal::-webkit-scrollbar{
   display: none;
 }
 .pic__modalContainer{
   position: relative;
-  width: 500px;
-  height: 500px;
+  max-width: 500px;
+  max-height: 500px;
   background: #fff;
   border-radius: 3px;
   display: flex;
@@ -655,7 +661,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(100%, -100%);
+  transform: translate(50%, -50%);
   background-color: #fdbc00;
   color: #fff;
   border-radius: 9999px;
@@ -677,7 +683,149 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   font-size: 2rem;
   font-family: 'Freehand', cursive;
   color: #000;
+}
+
+  
+
+/*///////////////////////////////////////////////////////////////////// @media queries //////////////////////////////////////////////////////////////*/ 
+
+
+@media only screen and (max-width: 599px){
+  .hero{
+    height: 100vh;
+    padding: 200px 20px 0;
+  }
+  .hero__text{
+    max-width: 100%;
+  }
+  .hero__text__title{
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    margin-bottom: 50px;
+  }
+  .hero__text__desc{
+    font-size: .9rem;
+    line-height: 1.3rem;
+  }
+  .adventures h1{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    max-width: 90%;
+    margin-bottom: 50px;
+  }
+  .adventures_cardsContainer{
+    flex-direction: column;
+  }
+  .left > .adventures_card:nth-of-type(even){
+    height: 350px;
+    width: 100%;
+  }
+  .left > .adventures_card:nth-of-type(odd){
+    height: 350px;
+    width: 100%;
+  }
+  .right > .adventures_card:nth-of-type(odd){
+    height: 350px;
+    width: 100%;
+  }
+  .right > .adventures_card:nth-of-type(even){
+    height: 350px;
+    width: 100%;
+  }
+  .adventures__cardInfo h2{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .tips h1{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    max-width: 90%;
+    margin-bottom: 50px;
+  }
+  .tips__cardsContainer{
+    padding: 0 20px;
+  }
+  .tips__card{
+    height: auto;
+    padding-bottom: 130px;
+  }
+
+  .tip__modal{
+    padding: 100px 30px;
+  }
+  .pic__modalContent p{
+    font-size: 1.2rem;
+  }
+  .tip__modalContainer{
+    max-width: 300px;
+    padding: 30px;
+  }
+
+  .pics h1{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    max-width: 90%;
+    /* margin-bottom: 50px; */
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px){
+  .hero__text{
+    max-width: 100%;
+  }
+  .hero__text__title{
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .left > .adventures_card:nth-of-type(even){
+    height: 250px;
+    width: 100%;
+  }
+  .left > .adventures_card:nth-of-type(odd){
+    height: 400px;
+    width: 80%;
+  }
+  .right > .adventures_card:nth-of-type(odd){
+    height: 250px;
+    width: 100%;
+  }
+  .right > .adventures_card:nth-of-type(even){
+    height: 400px;
+    width: 80%;
+  }
+  .adventures__cardInfo h2{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .adventures__cardInfo p{
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1000px){
+  .hero__text{
+    max-width: 100%;
+  }
+  .hero__text__title{
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+  .left > .adventures_card:nth-of-type(even){
+    height: 300px;
+    width: 100%;
+  }
+  .left > .adventures_card:nth-of-type(odd){
+    height: 500px;
+    width: 80%;
+  }
+  .right > .adventures_card:nth-of-type(odd){
+    height: 300px;
+    width: 100%;
+  }
+  .right > .adventures_card:nth-of-type(even){
+    height: 500px;
+    width: 80%;
+  }
 }

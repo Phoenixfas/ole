@@ -53,13 +53,15 @@ export default function ActivitySlider({tour}: {tour: any}) {
     <div  className={style.slider}>
         <div className={style.slider__prev} onClick={() => prevSlide()}><BsArrowLeft /></div>
         <div className={style.slider__next} onClick={() => nextSlide()}><BsArrowRight /></div>
-        <div ref={slideRef} className={style.slider__container}>
-            {tour.activities.map((activity: any, index: any) => (
-                <div key={index} className={style.slide}>
-                    <h3>Day {activity.day}</h3>
-                    <p>{activity.description}</p>
-                </div>
-            ))}
+        <div className={style.sliderHolder}>
+            <div ref={slideRef} className={style.slider__container}>
+                {tour.activities.map((activity: any, index: any) => (
+                    <div key={index} className={style.slide}>
+                        <h3>Day {activity.day}</h3>
+                        <p>{activity.description}</p>
+                    </div>
+                ))}
+            </div>
         </div>
     </div>
   )
