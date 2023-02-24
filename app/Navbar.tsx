@@ -54,8 +54,9 @@ export default function Navbar() {
                 <div className={`navbar_links ${!headerColorToggled && "navbar_links_black"}`}>
                     <Link href="/">Home</Link>
                     <Link href="/tours">Tours</Link>
-                    <Link href="/contact">Contact</Link>
                     <Link href="/tips">Tips</Link>
+                    <Link href="/about">About</Link>
+                    <Link href="/contact">Contact</Link>
                     <Link href="/gallery">Gallery</Link>
                 </div>
                 <div className={'navbar_search'}>

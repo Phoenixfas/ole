@@ -279,5 +279,75 @@ export const pics = [
         location: "traveling in Ethiopia",
         image: "/images/gallery/traveling6.jpg",
     },
+    {
+        id: 57,
+        location: "",
+        image: "/images/gallery/gathering10.jpg",
+    },
+    {
+        id: 58,
+        location: "",
+        image: "/images/gallery/gathering11.jpg",
+    },
+    {
+        id: 59,
+        location: "",
+        image: "/images/gallery/gathering12.jpg",
+    },
+    {
+        id: 60,
+        location: "",
+        image: "/images/gallery/gathering13.jpg",
+    },
+    {
+        id: 61,
+        location: "",
+        image: "/images/gallery/gathering14.jpg",
+    },
+    {
+        id: 62,
+        location: "",
+        image: "/images/gallery/gathering15.jpg",
+    },
+    {
+        id: 63,
+        location: "",
+        image: "/images/gallery/gathering16.jpg",
+    },
+    {
+        id: 64,
+        location: "",
+        image: "/images/gallery/gathering17.jpg",
+    },
+    {
+        id: 65,
+        location: "",
+        image: "/images/gallery/gathering18.jpg",
+    },
+    {
+        id: 66,
+        location: "",
+        image: "/images/gallery/gathering19.jpg",
+    },
+    {
+        id: 67,
+        location: "",
+        image: "/images/gallery/gathering20.jpg",
+    },
+    {
+        id: 68,
+        location: "",
+        image: "/images/gallery/gathering21.jpg",
+    },
+    {
+        id: 69,
+        location: "",
+        image: "/images/gallery/gathering22.jpg",
+    },
+    {
+        id: 70,
+        location: "",
+        image: "/images/gallery/gathering23.jpg",
+    },
 
 ]
