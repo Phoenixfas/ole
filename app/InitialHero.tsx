@@ -38,7 +38,7 @@ export default function InitialHero() {
         function slide () {
             setSlide(pos);
             if (pos >= 5) {
-                // setDisable(true);
+                setDisable(true);
                 clearInterval(interval);
             }
             pos++
