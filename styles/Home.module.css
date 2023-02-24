@@ -695,6 +695,13 @@
 
 
 @media only screen and (max-width: 599px){
+  .initHero__textContainer{
+    padding: 0 20px;
+  }
+  .initHero__text{
+    max-width: 100%;
+    font-size: 1rem;
+  }
   .hero{
     height: 100vh;
     padding: 200px 20px 0;
@@ -773,6 +780,13 @@
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 768px){
+  .initHero__textContainer{
+    padding: 0 20px;
+  }
+  .initHero__text{
+    max-width: 100%;
+    font-size: 2rem;
+  }
   .hero__text{
     max-width: 100%;
   }

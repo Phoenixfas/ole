@@ -38,7 +38,7 @@ export default function InitialHero() {
         function slide () {
             setSlide(pos);
             if (pos >= 5) {
-                setDisable(true);
+                // setDisable(true);
                 clearInterval(interval);
             }
             pos++
@@ -186,15 +186,12 @@ const H1 = ({ lines}: {lines: any}) => {
         animate="visible"
       >
         {lines.map((line: any, index: any) => (
-          <>
-            <motion.span
-                key={index}
-                variants={itemVariants}
-            >
+          <div key={index}>
+            <motion.span variants={itemVariants} >
                 {line}
             </motion.span>
             <br />
-          </>
+          </div>
         ))}
       </motion.h1>
     );
