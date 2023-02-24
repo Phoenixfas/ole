@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { useAppSelector } from '@/redux/hooks'
-import { FaInstagram, FaTelegram, FaLinkedin, FaFacebook } from 'react-icons/fa'
+import { FaInstagram, FaTelegram, FaLinkedin, FaFacebook, FaTripadvisor } from 'react-icons/fa'
 import { SiGmail } from "react-icons/si"
 import Image from 'next/image'
 
@@ -42,6 +42,9 @@ export default function Footer() {
                     </Link>
                     <Link target="_blank" href={"mailto:Oneloveethiopia32@gmail.com"}>
                         <SiGmail size={30} />
+                    </Link>
+                    <Link target="_blank" href={"https://www.tripadvisor.com/Attraction_Review-g293791-d19933004-Reviews-One_love_Ethiopia_Tours_Car_Rent-Addis_Ababa.html"}>
+                        <FaTripadvisor size={30} />
                     </Link>
                 </div>
                 <div className="footer__copy">
