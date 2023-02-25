@@ -38,6 +38,22 @@ export default function About() {
                 <p>By combining his ground knowledge with office support, Ras Abye is able to ensure that every element of production from pre-production planning to post-production output is completed on time to budget as planned</p>
             </div>
         </div>
+        <div className={style.about__staff}>
+            <div className={style.staffImgHolder}>
+                <div className={style.about__staffImg}>
+                    <Image src="/images/about/yared_amare.jpg" alt="One Love Ethiopia Tours" width={500} height={500} />
+                </div>
+                <div className={style.about__staffImg}>
+                    <Image src="/images/about/birhanu_getu.jpg" alt="One Love Ethiopia Tours" width={500} height={500} />
+                </div>
+                <div className={style.about__staffImg}>
+                    <Image src="/images/about/yared_tamirat.jpg" alt="One Love Ethiopia Tours" width={500} height={500} />
+                </div>
+            </div>
+            <div className={style.about__staffDesc}>
+                <p><span>Yared Amare, Birhanu Getu & Yared Tamirat, </span>The drivers at One Love Ethiopia Tours have extensive experience and possess the potential to be skilled and safe drivers when they drive with good technique.</p>
+            </div>
+        </div>
     </div>
   )
 }

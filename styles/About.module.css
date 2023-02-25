@@ -104,6 +104,16 @@
     width: 100%;
     max-width: 800px;
 }
+.staffImgHolder{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.staffImgHolder .about__staffImg{
+    width: 200px;
+    height: 270px;
+}
 .about__staffImg {
     width: 250px;
     height: 300px;
