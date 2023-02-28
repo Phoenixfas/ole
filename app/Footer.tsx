@@ -16,6 +16,7 @@ export default function Footer() {
                     <Link href={'/'}>Home</Link>
                     <Link href={'/tours'}>Tours</Link>
                     <Link href={'/tips'}>Travel Tips</Link>
+                    <Link href={'/services'}>Services</Link>
                     <Link href={'/about'}>About</Link>
                     <Link href={'/contact'}>Contact</Link>
                     <Link href={'/gallery'}>Gallery</Link>
