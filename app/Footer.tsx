@@ -25,7 +25,7 @@ export default function Footer() {
                     <Image src="/images/logo/logo_dark.png" alt="logo" width={500} height={500} />
                 </div>
                 <div className="footer__about">
-                    One Love Ethiopia is a reputable tour and car rental company based in Ethiopia. With a focus on customer satisfaction, they offer a wide range of services including guided tours, airport transfers, and car rental services. One Love Ethiopia is committed to providing an authentic and memorable experience for all their clients.
+                    One Love Ethiopia is a reputable tour and car rental company based in Ethiopia. With a focus on customer satisfaction, we offer a wide range of services including guided tours, airport transfers, and car rental services. We are committed to providing an authentic and memorable experience for all our clients.
                 </div>
                 <div className="footer__socials">
                     <Link target="_blank" href={"https://www.facebook.com/oneloveethiopiatours?mibextid=ZbWKwL"}>

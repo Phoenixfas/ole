@@ -44,7 +44,7 @@ export default function Hero() {
         </ParallaxProvider>
         <div className={style.hero__text}>
             <motion.div initial={{x: -500, opacity: 0}} animate={{x: 0, opacity: 1}} transition={{duration: 5, stiffness: 50, bounce: 0.8, type: "spring" }} className={style.hero__text__title}>
-                ONE LOVE ETHIOPIA TOURS
+                ONE LOVE ETHIOPIA TOURS & CAR RENTAL
             </motion.div>
             <motion.div initial={{y: 200, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{duration: 5, delay: .3, stiffness: 50, bounce: 0.8, type: "spring" }} className={style.hero__text__desc}>
                 Experience the wonders of Ethiopia and unlock your sense of adventure with us.

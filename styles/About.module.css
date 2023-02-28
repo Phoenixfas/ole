@@ -110,10 +110,37 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+    margin-bottom: 30px;
+}
+.about__staffContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding: 0 10px 20px;
+    background-color: #fdbc00;
+    color: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .3s;
+}
+.about__staffContent:hover{
+    background-color: #000;
+    color: #fdbc00;
+}
+.about__staffContent p{
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    text-align: center;
+}
+.about__staffContent span{
+    font-size: 1.1rem;
+    font-weight: 800;
 }
 .staffImgHolder .about__staffImg{
     width: 200px;
-    height: 270px;
+    height: 250px;
 }
 .about__staffImg {
     width: 250px;
@@ -147,6 +174,60 @@
     font-weight: 800;
 }
 
+
+.about__services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px 10px;
+}
+.about__services h1{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+.service{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 50px;
+    gap: 30px;
+}
+.serviceList__l{
+    min-width: 300px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color: #fdbc00;
+    color: #000;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.serviceList__l h2{
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.serviceList__r{
+    min-width: 300px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.serviceList__r h2{
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 /*///////////////////////////////////////////////////////////////////// @media queries //////////////////////////////////////////////////////////////*/ 
 
 
@@ -154,10 +235,25 @@
     .hero{
       height: 500px;
     }
+    .about__services{
+        padding: 50px 0;
+    }
+    .service:nth-of-type(2){
+        flex-direction: column-reverse;
+    }
+    .serviceList__l{
+        padding: 30px;
+    }
+    .serviceList__r{
+        padding: 30px;
+    }
   }
   @media only screen and (min-width: 600px) and (max-width: 768px){
     .hero{
       height: 500px;
+    }
+    .service:nth-of-type(2){
+        flex-direction: column-reverse;
     }
   }
   @media only screen and (min-width: 768px) and (max-width: 1000px){

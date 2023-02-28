@@ -38,20 +38,120 @@ export default function About() {
                 <p>By combining his ground knowledge with office support, Ras Abye is able to ensure that every element of production from pre-production planning to post-production output is completed on time to budget as planned</p>
             </div>
         </div>
+
         <div className={style.about__staff}>
             <div className={style.staffImgHolder}>
-                <div className={style.about__staffImg}>
-                    <Image src="/images/about/yared_amare.jpg" alt="One Love Ethiopia Tours" width={500} height={500} />
+                <div className={style.about__staffContent}>
+                    <div className={style.about__staffImg}>
+                        <Image src="/images/about/nebiyat_yohannes.jpg" alt="One Love Ethiopia Tours" width={500} height={500} />
+                    </div>
+                    <p><span>Nebiyat Yohannes</span></p>
+                    <p>Reservation</p>
                 </div>
-                <div className={style.about__staffImg}>
-                    <Image src="/images/about/birhanu_getu.jpg" alt="One Love Ethiopia Tours" width={500} height={500} />
+                <div className={style.about__staffContent}>
+                    <div className={style.about__staffImg}>
+                        <Image src="/images/about/kokeb_fasika.jpg" alt="One Love Ethiopia Tours" width={500} height={500} />
+                    </div>
+                    <p><span>Kokeb Fasika</span></p>
+                    <p>Finance head</p>
                 </div>
-                <div className={style.about__staffImg}>
-                    <Image src="/images/about/yared_tamirat.jpg" alt="One Love Ethiopia Tours" width={500} height={500} />
+                <div className={style.about__staffContent}>
+                    <div className={style.about__staffImg}>
+                        <Image src="/images/about/miraf_tamrat.jpg" alt="One Love Ethiopia Tours" width={500} height={500} />
+                    </div>
+                    <p><span>Miraf Tamrat</span></p>
+                    <p>Marketing head</p>
+                </div>
+                <div className={style.about__staffContent}>
+                    <div className={style.about__staffImg}>
+                        <Image src="/images/about/kokeb_misiraq.jpg" alt="One Love Ethiopia Tours" width={500} height={500} />
+                    </div>
+                    <p><span>Kokeb Misiraq</span></p>
+                    <p>Reception</p>
+                </div>
+                <div className={style.about__staffContent}>
+                    <div className={style.about__staffImg}>
+                        <Image src="/images/about/amanuel_tadesa.jpg" alt="One Love Ethiopia Tours" width={500} height={500} />
+                    </div>
+                    <p><span>Amanuel Tadesa</span></p>
+                    <p>Logistics</p>
+                </div>
+            </div>
+        </div>
+
+        <div className={style.about__staff}>
+            <div className={style.staffImgHolder}>
+                <div className={style.about__staffContent}>
+                    <div className={style.about__staffImg}>
+                        <Image src="/images/about/yared_amare.jpg" alt="One Love Ethiopia Tours" width={500} height={500} />
+                    </div>
+                    <p><span>Yared Amare</span></p>
+                    <p>Driver</p>
+                </div>
+                <div className={style.about__staffContent}>
+                    <div className={style.about__staffImg}>
+                        <Image src="/images/about/birhanu_getu.jpg" alt="One Love Ethiopia Tours" width={500} height={500} />
+                    </div>
+                    <p><span>Birhanu Getu</span></p>
+                    <p>Driver</p>
+                </div>
+                <div className={style.about__staffContent}>
+                    <div className={style.about__staffImg}>
+                        <Image src="/images/about/yared_tamirat.jpg" alt="One Love Ethiopia Tours" width={500} height={500} />
+                    </div>
+                    <p><span>Yared Tamirat</span></p>
+                    <p>Driver</p>
+                </div>
+                <div className={style.about__staffContent}>
+                    <div className={style.about__staffImg}>
+                        <Image src="/images/about/abenezer_kasahun.jpg" alt="One Love Ethiopia Tours" width={500} height={500} />
+                    </div>
+                    <p><span>Abenezer Kasahun</span></p>
+                    <p>Driver</p>
                 </div>
             </div>
             <div className={style.about__staffDesc}>
-                <p><span>Yared Amare, Birhanu Getu & Yared Tamirat, </span>The drivers at One Love Ethiopia Tours have extensive experience and possess the potential to be skilled and safe drivers when they drive with good technique.</p>
+                <p>The drivers at One Love Ethiopia Tours have extensive experience and possess the potential to be skilled and safe drivers when they drive with good technique.</p>
+            </div>
+        </div>
+
+
+        <div className={style.about__services}>
+            <h1>SERVICES</h1>
+            <div className={style.service}>
+                <div className={style.serviceList__l}>
+                    <h2>TOURS</h2>
+                    <ul>
+                        <li>Package tours for groups and individuals.</li>
+                        <li>Thematic tours (immersion, family, photo, gastronomy, bird watching, trail, adventure, etc.)</li>
+                        <li>Tailor-made tours.</li>
+                        <li>Excursions</li>
+                    </ul>
+                </div>
+                <div className={style.serviceList__r}>
+                    <h2>GUIDING & LOGISTICS SERVICES</h2>
+                    <ul>
+                        <li>Guiding service (speaking different languages).</li>
+                        <li>Expert support (archaeologist, art, ornithologist, etc.)</li>
+                        <li>Logistical support for documentary filming & lectures.</li>
+                    </ul>
+                </div>
+            </div>
+            <div className={style.service}>
+                <div className={style.serviceList__r}>
+                    <h2>CAR & CAMPING EQUIPMENT RENTAL</h2>
+                    <ul>
+                        <li>Vehicle rental with driver (4WD, mini-buses, buses).</li>
+                        <li>Rental of camping equipment</li>
+                    </ul>
+                </div>
+                <div className={style.serviceList__l}>
+                    <h2>BOOKING SERVICES</h2>
+                    <ul>
+                        <li>Flight tickets reservations (for internal flights).</li>
+                        <li>Hotel booking.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
