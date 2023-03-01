@@ -352,67 +352,67 @@ export const pics = [
     {
         "id": 71,
         "location": "",
-        "image": "/images/gallery/tour1.jpg"
+        "image": "/images/gallery/tour1.JPG"
     },
     {
         "id": 72,
         "location": "",
-        "image": "/images/gallery/tour2.jpg"
+        "image": "/images/gallery/tour2.JPG"
     },
     {
         "id": 73,
         "location": "",
-        "image": "/images/gallery/tour3.jpg"
+        "image": "/images/gallery/tour3.JPG"
     },
     {
         "id": 74,
         "location": "",
-        "image": "/images/gallery/tour4.jpg"
+        "image": "/images/gallery/tour4.JPG"
     },
     {
         "id": 75,
         "location": "",
-        "image": "/images/gallery/tour5.jpg"
+        "image": "/images/gallery/tour5.JPG"
     },
     {
         "id": 76,
         "location": "",
-        "image": "/images/gallery/tour6.jpg"
+        "image": "/images/gallery/tour6.JPG"
     },
     {
         "id": 77,
         "location": "",
-        "image": "/images/gallery/tour7.jpg"
+        "image": "/images/gallery/tour7.JPG"
     },
     {
         "id": 78,
         "location": "",
-        "image": "/images/gallery/tour8.jpg"
+        "image": "/images/gallery/tour8.JPG"
     },
     {
         "id": 79,
         "location": "",
-        "image": "/images/gallery/tour9.jpg"
+        "image": "/images/gallery/tour9.JPG"
     },
     {
         "id": 80,
         "location": "",
-        "image": "/images/gallery/tour10.jpg"
+        "image": "/images/gallery/tour10.JPG"
     },
     {
         "id": 81,
         "location": "",
-        "image": "/images/gallery/tour11.jpg"
+        "image": "/images/gallery/tour11.JPG"
     },
     {
         "id": 82,
         "location": "",
-        "image": "/images/gallery/tour12.jpg"
+        "image": "/images/gallery/tour12.JPG"
     },
     {
         "id": 83,
         "location": "",
-        "image": "/images/gallery/tour13.jpg"
+        "image": "/images/gallery/tour13.JPG"
     },
   ]
 

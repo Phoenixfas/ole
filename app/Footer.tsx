@@ -14,11 +14,11 @@ export default function Footer() {
             <div className='footer'>
                 <div className="footer__menu">
                     <Link href={'/'}>Home</Link>
-                    <Link href={'/tours'}>Tours</Link>
+                    <Link href={'/tours'}>Our Tour</Link>
                     <Link href={'/tips'}>Travel Tips</Link>
-                    <Link href={'/services'}>Services</Link>
-                    <Link href={'/about'}>About</Link>
-                    <Link href={'/contact'}>Contact</Link>
+                    <Link href={'/services'}>Our Service</Link>
+                    <Link href={'/about'}>About Us</Link>
+                    <Link href={'/contact'}>Contact Us</Link>
                     <Link href={'/gallery'}>Gallery</Link>
                     <hr color='#ffffff88' />
                 </div>

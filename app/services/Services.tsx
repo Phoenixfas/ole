@@ -4,14 +4,14 @@ import Image from "next/image"
 export default function Services() {
   return (
     <div className={style.about}>
-        <div className={style.about__logo}>
+        {/* <div className={style.about__logo}>
             <Image src="/images/logo/logo_text_light.png" alt="One Love Ethiopia Tours" width={500} height={500} />
-        </div>
-        <div className={style.about__desc}>
+        </div> */}
+        {/* <div className={style.about__desc}>
             <p>Our primary focus is on tourism and transportation services, including car rentals, airport transfers, and tour packages. We have a wide range of well-maintained and comfortable vehicles, including sedans, SUVs, vans, and buses that are perfect for any type of travel, from short trips around the city to longer excursions across the country.</p>
-        </div>
+        </div> */}
         <div className={style.about__services}>
-            <h1>SERVICES</h1>
+            {/* <h1>SERVICES</h1> */}
             <div className={style.service}>
                 <div className={style.serviceList__l}>
                     <h2>TOURS</h2>
