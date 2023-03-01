@@ -13,14 +13,14 @@ export default function Home() {
   return (
     <main className={style.main}>
       <InitialHero />
-      {!initHeroToggle && (
-        <>
-          <Hero />
+      {/* {!initHeroToggle && (
+        <> */}
+          {/* <Hero /> */}
           <Adventures />
           <Tips />
           <Pics />
-        </>
-      )}
+        {/* </>
+      )} */}
     </main>
   )
 }

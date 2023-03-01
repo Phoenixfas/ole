@@ -9,8 +9,8 @@ export default function Footer() {
     const initHeroToggle = useAppSelector(state => state.initHeroToggle.value)
 
   return (
-    <>
-        {!initHeroToggle && (
+    // <>
+    //     {!initHeroToggle && (
             <div className='footer'>
                 <div className="footer__menu">
                     <Link href={'/'}>Home</Link>
@@ -52,7 +52,7 @@ export default function Footer() {
                     <span>&copy; 2023 - All rights reserved | Designed and developed by <Link target="_blank" href={"https://afriopia.com"}>Afriopia Unified Systems</Link></span>
                 </div>
             </div>
-        )}
-    </>
+    //     )}
+    // </>
   )
 }

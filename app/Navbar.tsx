@@ -45,8 +45,8 @@ export default function Navbar() {
 
 
   return (
-    <>
-        {!initHeroToggle && (
+    // <>
+    //     {!initHeroToggle && (
             <motion.div initial={{y: "-100%"}} animate={{y: "0%"}} transition={{duration: .3, delay: .3}} className={'navbar'}>
                 <div className={'navbar_logo'}>
                     <Image src={headerColorToggled ? "/images/logo/logo_light.png" : "/images/logo/logo_dark.png"} alt="logo" width={100} height={100} />
@@ -84,7 +84,7 @@ export default function Navbar() {
                     </div>
                 </div>
             </motion.div>
-        )}
-    </>
+    //     )}
+    // </>
   )
 }

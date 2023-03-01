@@ -1,10 +1,12 @@
 'use client'
 import Image from 'next/image'
 import style from '../styles/Home.module.css'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { AnimatePresence, motion } from 'framer-motion';
 import { useAppSelector, useAppDispatch } from '@/redux/hooks';
 import { toggleInitHero } from '@/redux/slices/initHeroToggleSlice';
+import { toggleHeaderColor } from '@/redux/slices/headerColorToggleSlice'
+import { BsArrowRight, BsArrowLeft } from 'react-icons/bs'
 
 const progVariant = {
     init: {
@@ -20,11 +22,28 @@ const progVariant = {
 }
 
 export default function InitialHero() {
+    const elementRef = useRef(null);
     const dispatch = useAppDispatch();
     const initHeroToggle = useAppSelector(state => state.initHeroToggle.value);
     const [disable, setDisable] = useState(false);
 
     const [slide, setSlide] = useState(0);
+
+    const nextSlide = () => {
+        if(slide >= 4) {
+            setSlide(1);
+            return;
+        }
+        setSlide(slide + 1);
+    }
+
+    const prevSlide = () => {
+        if(slide === 1) {
+            setSlide(4);
+            return;
+        }
+        setSlide(slide - 1);
+    }
     
     useEffect(() => {
         if(disable) {
@@ -38,22 +57,46 @@ export default function InitialHero() {
         function slide () {
             setSlide(pos);
             if (pos >= 5) {
-                setDisable(true);
-                clearInterval(interval);
+                // setDisable(true);
+                // clearInterval(interval);
+                pos = 1;
+                setSlide(pos);
             }
             pos++
         }
     
         let interval =  setInterval(slide , 5000);
+
+
+        ////////////////////////////////////
+
+        const element: any = elementRef.current;
+        const handleScroll = () => {
+          const { top, bottom } = element.getBoundingClientRect();
+          const windowHeight = window.innerHeight;
+      
+          if (top > windowHeight || bottom < 0) {
+            dispatch(toggleHeaderColor(false))
+          } else {
+            dispatch(toggleHeaderColor(true))
+          }
+        };
+      
+        window.addEventListener('scroll', handleScroll);
     
+        return () => {
+            clearInterval(interval);
+            window.removeEventListener('scroll', handleScroll);
+        }
+
     }, [disable])
     
 
   return (
     <>
         <AnimatePresence>
-            {initHeroToggle && (
-                <motion.div initial={{opacity: 0}} animate={{ opacity: 1 }} exit={{opacity:0}} transition={{duration: .3, ease: "linear"}} className={style.initHero} >
+            {/* {initHeroToggle && ( */}
+                <motion.div ref={elementRef} initial={{opacity: 0}} animate={{ opacity: 1 }} exit={{opacity:0}} transition={{duration: .3, ease: "linear"}} className={style.initHero} >
                     <div className={style.initHero__imgContainer}>
                         <div id='hero_slider' className={style.initHero__imgsSlider}>
                             <AnimatePresence>
@@ -137,12 +180,15 @@ export default function InitialHero() {
                         </div>
                     </div>
                     <div className={style.initHero__skip}>
-                        <div className={style.initHero__skipBtn} onClick={() => dispatch(toggleInitHero(false))}>
-                            Skip
+                        <div className={`${style.initHero__skipBtn} ${style.slider__prev}`} onClick={() => prevSlide()}>
+                            <BsArrowLeft />
+                        </div>
+                        <div className={`${style.initHero__skipBtn} ${style.slider__next}`} onClick={() => nextSlide()}>
+                            <BsArrowRight />
                         </div>
                     </div>
                 </motion.div>
-            )}
+            {/* )} */}
         </AnimatePresence>
     </>
   )

@@ -11,6 +11,7 @@
 
 /* ///////////////////////////////////////////////////////////////////  Initial Hero  ////////////////////////////////////////////////////////////////////// */
 .initHero {
+  position: relative;
   background-color: #000;
   display: flex;
   flex-direction: column;
@@ -126,21 +127,35 @@
 .initHero__skip{
   position: absolute;
   z-index: 1;
-  bottom: 50px;
+  bottom: 50%;
+  transform: translateY(-50%);
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .initHero__skipBtn{
-  width: fit-content;
-  padding: 5px 30px;
-  clip-path: polygon(50% 0, 95% 20%, 100% 50%, 95% 80%, 50% 100%, 5% 80%, 0% 50%, 5% 20%);
-  background-color: #fdbc00;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* clip-path: polygon(50% 0, 95% 20%, 100% 50%, 95% 80%, 50% 100%, 5% 80%, 0% 50%, 5% 20%); */
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 3rem;
   text-transform: lowercase;
   letter-spacing: 0.3rem;
   cursor: pointer;
+  transition: .3s;
+}
+.slider__prev{
+  background: linear-gradient(to left, #00000000, #fdbc00 );
+}
+.slider__next{
+  background: linear-gradient(to right, #00000000, #fdbc00 );
+}
+.initHero__skipBtn:hover{
+  background-color: #fdbc00;
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -702,6 +717,15 @@
     max-width: 100%;
     font-size: 1rem;
   }
+  .initHero__skip{
+    bottom: 100px;
+    transform: translateY(0);
+  }
+  .initHero__skipBtn{
+    width: 50px;
+    height: 50px;
+    font-size: 1;
+  }
   .hero{
     min-height: 100vh;
     padding: 200px 20px 0;
@@ -787,6 +811,15 @@
     max-width: 100%;
     font-size: 2rem;
   }
+  .initHero__skip{
+    bottom: 100px;
+    transform: translateY(0);
+  }
+  .initHero__skipBtn{
+    width: 80px;
+    height: 80px;
+    font-size: 1;
+  }
   .hero__text{
     max-width: 100%;
   }
@@ -819,6 +852,15 @@
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1000px){
+  .initHero__skip{
+    bottom: 100px;
+    transform: translateY(0);
+  }
+  .initHero__skipBtn{
+    width: 80px;
+    height: 80px;
+    font-size: 1;
+  }
   .hero__text{
     max-width: 100%;
   }
