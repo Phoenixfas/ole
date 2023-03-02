@@ -15,32 +15,32 @@ export default function Services() {
             <div className={style.serviceList}>
                 <h2>TOURS</h2>
                 <ul>
-                    <li><FaCheckCircle color="white" /> <span>Package tours for groups and individuals.</span></li>
-                    <li><FaCheckCircle color="white" /> <span>Thematic tours (immersion, family, photo, gastronomy, bird watching, trail, adventure, etc.)</span></li>
-                    <li><FaCheckCircle color="white" /> <span>Tailor-made tours.</span></li>
-                    <li><FaCheckCircle color="white" /> <span>Excursions</span></li>
+                    <li><div><FaCheckCircle color="white" size={25} /></div> <div><span>Package tours for groups and individuals.</span></div></li>
+                    <li><div><FaCheckCircle color="white" size={25} /></div> <div><span>Thematic tours (immersion, family, photo, gastronomy, bird watching, trail, adventure, etc.)</span></div></li>
+                    <li><div><FaCheckCircle color="white" size={25} /></div> <div><span>Tailor-made tours.</span></div></li>
+                    <li><div><FaCheckCircle color="white" size={25} /></div> <div><span>Excursions</span></div></li>
                 </ul>
             </div>
             <div className={style.serviceList}>
                 <h2>GUIDING & LOGISTICS SERVICES</h2>
                 <ul>
-                    <li><FaCheckCircle color="white" /> <span>Guiding service (speaking different languages).</span></li>
-                    <li><FaCheckCircle color="white" /> <span>Expert support (archaeologist, art, ornithologist, etc.)</span></li>
-                    <li><FaCheckCircle color="white" /> <span>Logistical support for documentary filming & lectures.</span></li>
+                    <li><div><FaCheckCircle color="white" size={25} /></div> <div><span>Guiding service (speaking different languages).</span></div></li>
+                    <li><div><FaCheckCircle color="white" size={25} /></div> <div><span>Expert support (archaeologist, art, ornithologist, etc.)</span></div></li>
+                    <li><div><FaCheckCircle color="white" size={25} /></div> <div><span>Logistical support for documentary filming & lectures.</span></div></li>
                 </ul>
             </div>
             <div className={style.serviceList}>
                 <h2>CAR & CAMPING EQUIPMENT RENTAL</h2>
                 <ul>
-                    <li><FaCheckCircle color="white" /> <span>Vehicle rental with driver (4WD, mini-buses, buses).</span></li>
-                    <li><FaCheckCircle color="white" /> <span>Rental of camping equipment</span></li>
+                    <li><div><FaCheckCircle color="white" size={25} /></div> <div><span>Vehicle rental with driver (4WD, mini-buses, buses).</span></div></li>
+                    <li><div><FaCheckCircle color="white" size={25} /></div> <div><span>Rental of camping equipment</span></div></li>
                 </ul>
             </div>
             <div className={style.serviceList}>
                 <h2>BOOKING SERVICES</h2>
                 <ul>
-                    <li><FaCheckCircle color="white" /> <span>Flight tickets reservations (for internal flights).</span></li>
-                    <li><FaCheckCircle color="white" /> <span>Hotel booking.</span></li>
+                    <li><div><FaCheckCircle color="white" size={25} /></div> <div><span>Flight tickets reservations (for internal flights).</span></div></li>
+                    <li><div><FaCheckCircle color="white" size={25} /></div> <div><span>Hotel booking.</span></div></li>
                 </ul>
             </div>
         </div>
