@@ -1,7 +1,8 @@
 const tours = [
     {
         id: 1,
-        name: '1-DAY ADDIS ABABA CITY TOUR',
+        name: '1 DAY ADDIS ABABA CITY TOUR',
+        mainName: '1 DAY ADDIS ABABA CITY TOUR',
         description: 'Full day tour of Ethiopia’s capital, Addis Ababa.',
         image: "/images/tours/addis.jpg",
         activities: [
@@ -24,6 +25,7 @@ const tours = [
     {
         id: 2,
         name: '3 NIGHT AND 4 DAYS TO DENAKIL AND VOLCANO',
+        mainName: '4 DAYS TO DENAKIL AND VOLCANO',
         description: 'Visit the Denakil and Ertale of Ethiopia in this 4 day itinerary.',
         image: "/images/tours/danakil.jpg",
         activities: [
@@ -51,7 +53,8 @@ const tours = [
     },
     {
         id: 3,
-        name: '6-DAYS HISTORICAL ROUTE BY AIR',
+        name: '6 DAYS HISTORICAL ROUTE BY AIR',
+        mainName: '6 DAYS HISTORICAL ROUTE',
         description: 'Visit the main historical sites in the north of Ethiopia – Bahir Dar, Gondar, Axum& Lalibela in 6 days using domestic flights.',
         image: "/images/tours/tana.png",
         activities: [
@@ -84,6 +87,7 @@ const tours = [
     {
         id: 4,
         name: '12 DAYS - TRIBES OF THE OMO VALLEY',
+        mainName: '12 DAYS - TRIBES OF THE OMO VALLEY',
         description: 'Visit the tribes of the Omo Valley in this 12-day program.',
         image: "/images/tours/omo.png",
         activities: [
@@ -141,7 +145,8 @@ const tours = [
     },
     {
         id: 5,
-        name: '7-DAY SIMIEN MOUNTAINS TREK',
+        name: '7 DAY SIMIEN MOUNTAINS TREK',
+        mainName: '7 DAY SIMIEN MOUNTAINS TREK',
         description: 'This 7-day trek in the Simien Mountains brings you to the peak of Ras Dashen – the highest point in Ethiopia.',
         image: "/images/tours/simien.jpg",
         activities: [
@@ -169,6 +174,7 @@ const tours = [
     {
         id: 6,
         name: '16 DAYS NORTH & SOUTH ETHIOPIA BY SURFACE AND AIR',
+        mainName: '16 DAYS NORTH & SOUTH ETHIOPIA',
         description: 'Visit the highlights of the northern historical route and the tribes of the Omo Valley in this 15-day itinerary.',
         image: "/images/tours/axum.jpg",
         activities: [

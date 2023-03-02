@@ -33,7 +33,7 @@ const Cards = ({t, alignLeft}: {t: any, alignLeft: boolean}) => {
                     </div>
                     <Link href={`/tours/${tour.id}`} className={style.adventures__cardInfo}>
                         <p>0{tour.id}</p>
-                        <h2>{tour.name}</h2>
+                        <h2>{tour.mainName}</h2>
                         <span><BsArrowRight size={35} /></span>
                     </Link>
                 </div>

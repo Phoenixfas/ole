@@ -128,7 +128,7 @@
   position: absolute;
   z-index: 1;
   bottom: 50%;
-  transform: translateY(-50%);
+  transform: translateY(50%);
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -150,12 +150,15 @@
 }
 .slider__prev{
   background: linear-gradient(to left, #00000000, #fdbc00 );
+  opacity: .5;
 }
 .slider__next{
   background: linear-gradient(to right, #00000000, #fdbc00 );
+  opacity: .5;
 }
 .initHero__skipBtn:hover{
   background-color: #fdbc00;
+  opacity: 1;
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */

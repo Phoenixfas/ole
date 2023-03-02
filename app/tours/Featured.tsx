@@ -12,7 +12,7 @@ export default function Featured() {
             {t.map((tour, i) => (
                 <Link href={`/tours/${tour.id}`} key={i} className={style.featured__card}>
                     <Image src={tour.image} alt={tour.name} fill />
-                    <p>{tour.name}</p>
+                    <p>{tour.mainName}</p>
                 </Link>
             ))}
         </div>
