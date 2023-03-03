@@ -39,7 +39,7 @@ export default function page() {
             <div className={style.book__container}>
                 <div className={style.message__container}>
                     <div className={style.message}>
-                        <form className={style.message__form} onSubmit={onSubmit} action="mailto:woodhulabe123@gmail.com" method="post" encType="text/plain">
+                        <form className={style.message__form} onSubmit={onSubmit} action="mailto:info@oneloveethiopiatours.com" method="post" encType="text/plain">
                             {error && (
                                 <p style={{textAlign: "center", padding: "3px", borderRadius: "3px", backgroundColor: "orangered", color: "#fff"}}>{error}</p>
                             )}
